@@ -157,7 +157,7 @@ jobs:
         cd $OPENWRT_PATH/bin/targets/*/*
         cp $OPENWRT_PATH/.config ipq807x.config
         mv config.buildinfo ipq807x.config.buildinfo
-        mv -f $OPENWRT_PATH/bin/packages/*/*/*.apk packages
+        mv -f $OPENWRT_PATH/bin/packages/*/*/*.ipk packages
         tar -zcf ipq807x.Packages.tar.gz packages
         rm -rf packages feeds.buildinfo version.buildinfo sha256sums profiles.json
         echo "FIRMWARE_PATH=$PWD" >> $GITHUB_ENV
